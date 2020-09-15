@@ -3,9 +3,7 @@
 
 「gitで使えるようにする(ローカルに作成した)」
 get init
-
-「masterにあげる」???
-git add master
+//masterが現れる
 
 「ファイルをあげる」
 git add <ファイル名>
@@ -14,12 +12,10 @@ git add <ファイル名>
 git commit -m "<書きたい変更内容>"
 
 「実際に載せる」
-git push <リモート名> <ファイル名>
-//<ファイル名> = masterでも可
+git push <リモート名> master
 
 「リモートからデータを取り出す」
-git pull <リモート名> <ファイル名>
-//<ファイル名> = masterでも可
+git pull <リモート名> master
 
 add→commit→push→pullの順
 
