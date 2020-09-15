@@ -1,10 +1,14 @@
 //以下<>は実際に入力しない。
-
-「masterにあげる」
-git add master
+//git bashで操作
 
 「gitで使えるようにする(ローカルに作成した)」
 get init
+
+「masterにあげる」???
+git add master
+
+「ファイルをあげる」
+git add <ファイル名>
 
 「コミットする(ログコメントをつける)」
 git commit -m "<書きたい変更内容>"
@@ -15,12 +19,17 @@ git push <リモート名> <ファイル名>
 「リモートからデータを取り出す」
 git pull <リモート名> <ファイル名>
 
+add→commit→push→pullの順
+
 
 「ファイルの作成」
 touch <ファイル名.形式>
 
-「プッシュ先のリモート指定」
-git remote add origin <githubアドレス>
+「プッシュ先のリモート指定(リモートの作成)」
+git remote add <リモート名> <リポジトリのURL>
+
+「現ディレクトリのremoteの確認」
+git remote -v
 
 「データの削除」
 git rm <データ名>
@@ -29,9 +38,20 @@ git rm <データ名>
 「リモートの削除」
 git remote rm <リモート名>
 
+「githubのリポジトリをローカルにコピー」
+git clone <リポジトリのURL>
+
 
 「ファイルの状態の確認」
 git status(変更したファイル、githubにあげたファイルの確認)
 git diff(変更したファイルの差異の確認)
 git log(コミットメッセージの確認)
 git log -p(コミット+変更内容の確認)
+
+
+【備考欄】
+・リモート名はディレクトリごとに設定されている。
+・ローカルのディレクトリとgithubが対応してなくてもいける
+・ローカルmkdirでディレクトリを作った場合は
+git remote add origin <リモート先>
+cloneで取ってきた場合はデフォルトでoriginが定まっている。
