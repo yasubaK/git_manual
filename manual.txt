@@ -15,9 +15,11 @@ git commit -m "<書きたい変更内容>"
 
 「実際に載せる」
 git push <リモート名> <ファイル名>
+//<ファイル名> = masterでも可
 
 「リモートからデータを取り出す」
 git pull <リモート名> <ファイル名>
+//<ファイル名> = masterでも可
 
 add→commit→push→pullの順
 
