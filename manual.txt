@@ -7,15 +7,18 @@ get init
 
 「ファイルをあげる」
 git add <ファイル名>
+//masterっていう箱に溜めていくイメージ
 
 「コミットする(ログコメントをつける)」
 git commit -m "<書きたい変更内容>"
 
 「実際に載せる」
 git push <リモート名> master
+//溜めた箱を載せるイメージ
 
 「リモートからデータを取り出す」
 git pull <リモート名> master
+//変更点をまとめておろしてくるイメージ
 
 add→commit→push→pullの順
 
